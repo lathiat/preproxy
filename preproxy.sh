@@ -7,7 +7,7 @@ preexec_proxy() {
   if [[ -e /sys/class/net/$proxy_interface ]]; then
     export http_proxy=$proxy_url https_proxy=$proxy_url no_proxy=$proxy_noproxy
   else
-    export http_proxy= https_proxy= no_proxy=
+    unset http_proxy https_proxy no_proxy
   fi
 }
 
