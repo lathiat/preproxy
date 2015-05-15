@@ -68,4 +68,4 @@ lathiat@ubuntu:~/src/preproxy$
 ```
 
 # Credit
-Thanks to Ryan Caloras for [bash-preexec.sh])https://github.com/rcaloras/bash-preexec)
+Thanks to Ryan Caloras for [bash-preexec.sh](https://github.com/rcaloras/bash-preexec)
