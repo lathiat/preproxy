@@ -67,5 +67,22 @@ declare -x http_proxy="http://int-proxy.corp:3128"
 lathiat@ubuntu:~/src/preproxy$
 ```
 
+# Roadmap
+
+I plan to implement support for using a wpad.dat file, and caching it for some amount of time
+to ensure speedy command execution.
+
+Challenges in this are:
+ - A javascript interpreter is needed to properly interpret the file
+ - Some wpad.dat files do matches against the hostname (and possibly other things) to determine the 
+   appropriate proxy.. we can't really support that as the URL may or may not beas the URL may or
+   may not beas the URL may or may not beas the URL may or may not be known.
+
+However basic support will likely be good enough for many use cases.
+
+Other options for network detection may also be appropriate, i.e. based on IP address, DNS domain, or
+GNOME/network-manager proxy settings for corporate networks rather than VPNs as I originally designed
+it for.  If you have a use case here, please let me know.
+
 # Credit
 Thanks to Ryan Caloras for [bash-preexec.sh](https://github.com/rcaloras/bash-preexec)
