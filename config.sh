@@ -1,5 +1,15 @@
 # preproxy configuration
 
+# * proxy_auto *
+# Automatically set and unset the proxy as required everytime a command is invoked.  This
+# is the default behavior.
+#
+# If disabled, you can specifically enable or disable the proxy by using the commands
+# proxy and noproxy, optionally passing in the command to run
+#
+# Comment this out to disable
+export proxy_mode=auto
+
 # * proxy_interface *
 #
 # This is the interface we check exists, in order to deside we need the proxy
