@@ -30,8 +30,5 @@ proxy() {
 }
 
 if [ "${proxy_mode}" = "auto" ]; then
-  echo auto
   preexec_functions+=(preexec_proxy)
-else
-  echo no auto
 fi
